@@ -1,0 +1,88 @@
+\documentclass{article}
+\twocolumn
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{commath}
+
+\title{\textbf{\Huge Assignment 1}}
+\author{\large H.N Srikanth - SM21Mtech12012}
+
+\date{August 2021}
+
+
+\begin{document}
+
+\providecommand{\mbf}{\mathbf}
+
+
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+
+\maketitle
+
+\section*{Chapter II, Examples II}
+\textbf{Q22 (iii)}
+\textbf{Find the conditions that the four points}
+\myvec{x_1\\y_1}, \myvec{x_2\\y_2},
+\myvec{x_3\\y_3}, \myvec{x_4\\y_4}
+\textbf{ may be the vertices of a rhombus.}\\
+
+\textbf{Solution :}
+\vspace{0.2cm}
+ The given points are
+
+
+\begin{align*}
+\vec{A} = \myvec{x_1\\y_1}, \vec{B} =\myvec{x_2\\y_2},
+\vec{C} =\myvec{x_3\\y_3}, \vec{D} =\myvec{x_4\\y_4},
+\end{align*}
+
+
+Condition for the given four points be the vertices of a rhombus are ;-\\
+1) If distances of all the four sides are equal\\
+2) If opposite sides are parallel and\\
+2) If diagonals are perpendicular bisectors.
+
+\vspace{0.2cm}
+
+Let us consider two vectors say,
+\begin{align*}
+\vec{U} = \myvec{u_1\\u_2}, \vec{V} =\myvec{v_1\\v_2}
+\end{align*} 
+
+
+then distance can be calculated using norm of a vector, i.e., 
+$$\norm{ \vec{U} - \vec{V}} = \sqrt{(v_1-u_1)^2+(v_2-u_2)^2}$$
+Here, $$ D_1=\norm{ \vec{A} - \vec{B}} =\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$$
+$$ D_2=\norm{ \vec{B} - \vec{C}} =\sqrt{(x_3-x_2)^2+(y_3-y_2)^2}$$
+$$ D_3=\norm{ \vec{C} - \vec{D}} =\sqrt{(x_4-x_3)^2+(y_4-y_3)^2}$$
+$$ D_4=\norm{ \vec{D} - \vec{A}} =\sqrt{(x_1-x_4)^2+(y_1-y_4)^2}$$
+
+\vspace{20cm}
+
+
+
+if $$( A-C )^T . ( B-D ) = 0 $$\\
+implies that AC and BD are perpendicular to each other.\\ 
+
+and say E , F be mid points joining the lines AC and BD. Now if\\
+AE = EC \\
+BF = FD \\ 
+implies that AC and BD bisect each other futher E and F be a same point.\\
+
+The above two conditions prove that AC and BD are perpendicular bisectors.
+\vspace{5mm} %5mm vertical space
+
+Now if \\ 1) $D_1=D_2=D_3=D_4\\ 
+2) \pm(A-B) = \pm \hspace{1mm} (D-C) ,\hspace{2mm} \pm(B-C)= \pm(A-D)\\
+  (implies\hspace{2mm} AB // DC\hspace{2mm} and \hspace{2mm}BC // AD)\\
+\text{3) AC and BD are perpendicular bisectors}
+
+\vspace{5mm} %5mm vertical space
+\textbf{Then, we can say that the given points are the vertices of a rhombus.}
+
+\end{document}
